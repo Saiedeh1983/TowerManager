@@ -1,0 +1,7 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\Alma.DAL.dll
+bin\Debug\Alma.DAL.pdb
+bin\Debug\Alma.Common.dll
+bin\Debug\Alma.Common.pdb
+obj\Debug\Alma.DAL.dll
+obj\Debug\Alma.DAL.pdb

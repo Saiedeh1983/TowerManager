@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alma.UI", "Alma.UI\Alma.UI.csproj", "{F5F8B2A1-2D0A-4B75-809A-35EA88072630}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alma.DAL", "..\Alma.DAL\Alma.DAL.csproj", "{46E0DCF3-071F-41D0-8077-A1518DA82E56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alma.Common", "..\Alma.Common\Alma.Common.csproj", "{44CC6FE7-51EF-4D85-B5A8-22B506B7F8EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5F8B2A1-2D0A-4B75-809A-35EA88072630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F8B2A1-2D0A-4B75-809A-35EA88072630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F8B2A1-2D0A-4B75-809A-35EA88072630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F8B2A1-2D0A-4B75-809A-35EA88072630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46E0DCF3-071F-41D0-8077-A1518DA82E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46E0DCF3-071F-41D0-8077-A1518DA82E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46E0DCF3-071F-41D0-8077-A1518DA82E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46E0DCF3-071F-41D0-8077-A1518DA82E56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44CC6FE7-51EF-4D85-B5A8-22B506B7F8EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44CC6FE7-51EF-4D85-B5A8-22B506B7F8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44CC6FE7-51EF-4D85-B5A8-22B506B7F8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44CC6FE7-51EF-4D85-B5A8-22B506B7F8EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

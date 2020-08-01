@@ -1,0 +1,274 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5F8B2A1-2D0A-4B75-809A-35EA88072630}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Alma.UI</RootNamespace>
+    <AssemblyName>Alma.UI</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Janus.Data.v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Janus.Windows.Common.v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Janus.Windows.GridEX.v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.UI.v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTree.Designer.cs">
+      <DependentUpon>frmTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmTree.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tree.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCcar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCcar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucContor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucContor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDetailInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCDetailInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucFiche.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFiche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCFloor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCFloor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCIndependent.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCIndependent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucIndependentSharj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucIndependentSharj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPassord.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPassord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPerson.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCServices.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCTower.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCTower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUnforeseen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucUnforeseen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCUnit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUnitContor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucUnitContor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCUnit_Person.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCUnit_Person.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Tree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tree.Designer.cs">
+      <DependentUpon>Tree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCcar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCcar.Designer.cs">
+      <DependentUpon>UCcar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucContor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucContor.Designer.cs">
+      <DependentUpon>ucContor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDetailInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDetailInfo.Designer.cs">
+      <DependentUpon>UCDetailInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucFiche.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucFiche.Designer.cs">
+      <DependentUpon>ucFiche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCFloor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCFloor.Designer.cs">
+      <DependentUpon>UCFloor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCIndependent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCIndependent.Designer.cs">
+      <DependentUpon>UCIndependent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucIndependentSharj.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucIndependentSharj.Designer.cs">
+      <DependentUpon>ucIndependentSharj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPassord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPassord.Designer.cs">
+      <DependentUpon>ucPassord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPerson.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPerson.Designer.cs">
+      <DependentUpon>UCPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCServices.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCServices.Designer.cs">
+      <DependentUpon>UCServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCTower.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCTower.Designer.cs">
+      <DependentUpon>UCTower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucUnforeseen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUnforeseen.Designer.cs">
+      <DependentUpon>ucUnforeseen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCUnit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCUnit.Designer.cs">
+      <DependentUpon>UCUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucUnitContor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUnitContor.Designer.cs">
+      <DependentUpon>ucUnitContor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCUnit_Person.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCUnit_Person.Designer.cs">
+      <DependentUpon>UCUnit_Person.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Alma.Common\Alma.Common.csproj">
+      <Project>{44CC6FE7-51EF-4D85-B5A8-22B506B7F8EF}</Project>
+      <Name>Alma.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Alma.DAL\Alma.DAL.csproj">
+      <Project>{46E0DCF3-071F-41D0-8077-A1518DA82E56}</Project>
+      <Name>Alma.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\buddy.gif" />
+    <Content Include="Images\delete.ico" />
+    <Content Include="Images\EDIT.ICO" />
+    <Content Include="Images\images[10].jpg" />
+    <Content Include="Images\images[2].jpg" />
+    <Content Include="Images\images[5].jpg" />
+    <Content Include="Images\images[7].jpg" />
+    <Content Include="Images\images[8].jpg" />
+    <Content Include="Images\NOTE16.ICO" />
+    <Content Include="Images\NOTES.ico" />
+    <Content Include="Images\person116.ico" />
+    <Content Include="Images\save.ico" />
+    <Content Include="Images\user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Photos\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
